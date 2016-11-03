@@ -1,13 +1,11 @@
-<html>
-<body>
-
-<h1>Моя Первая Веб Страница</h1>
-
-<p id="demo"></p>
+<div id="elem"></div>
 
 <script type="text/javascript">
-document.getElementById("demo").innerHTML=Date();
+var elem = document.getElementById('elem'),
+    str = "23.10.2013",
+    strMod = "";
+
+strMod = str.replace(/\./gi, "-");
+elem.innerHTML=strMod;
 </script>
 
-</body>
-</html> 
